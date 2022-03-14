@@ -8,5 +8,6 @@
          http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.1.xsd">
 
     <include relativeToChangelogFile="true" file="./sprint-1/db.create-clientes.xml"/>
-
+    <include relativeToChangelogFile="true" file="./sprint-1/db.create-entrega.sql"/>
+    
 </databaseChangeLog>

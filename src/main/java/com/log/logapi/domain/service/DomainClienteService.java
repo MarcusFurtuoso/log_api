@@ -3,7 +3,7 @@ package com.log.logapi.domain.service;
 
 import com.log.logapi.domain.exception.NegocioException;
 import com.log.logapi.domain.model.Cliente;
-import com.log.logapi.domain.model.repository.ClienteRepository;
+import com.log.logapi.domain.repository.ClienteRepository;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,6 +32,11 @@ public class DomainClienteService {
     @Transactional
     public void excluir(Long clienteId) {
         clienteRepository.deleteById(clienteId);
+    }
+
+    public Cliente solicitar(Long clienteId) {
+        return clienteRepository.findById(clienteId)
+                .orElseThrow(() -> new NegocioException("Cliente não encontrado!"));
     }
     
 }

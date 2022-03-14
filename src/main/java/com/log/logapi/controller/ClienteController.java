@@ -5,7 +5,7 @@ import java.util.List;
 import javax.validation.Valid;
 
 import com.log.logapi.domain.model.Cliente;
-import com.log.logapi.domain.model.repository.ClienteRepository;
+import com.log.logapi.domain.repository.ClienteRepository;
 import com.log.logapi.domain.service.DomainClienteService;
 
 import org.springframework.http.HttpStatus;

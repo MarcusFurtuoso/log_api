@@ -1,4 +1,4 @@
-package com.log.logapi.domain.model.repository;
+package com.log.logapi.domain.repository;
 
 import java.util.List;
 import java.util.Optional;
