@@ -9,5 +9,6 @@
 
     <include relativeToChangelogFile="true" file="./sprint-1/db.create-clientes.xml"/>
     <include relativeToChangelogFile="true" file="./sprint-1/db.create-entrega.sql"/>
-    
+    <include relativeToChangelogFile="true" file="./sprint-1/db.create-ocorrencia.sql"/>
+
 </databaseChangeLog>
